@@ -11,6 +11,8 @@ COPY Caddyfile /etc/caddy/Caddyfile
 
 COPY index.php /app/public/index.php
 
+COPY login.php /app/public/login.php
+
 ENV PORT=80
 
 CMD ["frankenphp", "run", "--config", "/etc/caddy/Caddyfile"]
